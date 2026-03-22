@@ -415,7 +415,7 @@ function getApiKey() { return localStorage.getItem(KEY_API) || ''; }
 // ── SCREENS ────────────────────────────────────────────────────────────────
 function show(id) {
   ['setup-screen','main-screen','analyze-screen'].forEach(s => {
-    $(s).style.display = (s === id) ? (id==='main-screen'?'block':'') : 'none';
+    $(s).style.display = (s === id) ? 'block' : 'none';
   });
   if (id === 'main-screen') renderDashboard();
 }
